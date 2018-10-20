@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* 清除默认边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+   list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* 尾部样式 */
+footer{
+    height: 300px;
+    width: 100%;
+    background:#0c94dc;
+    display: flex;
+    color: white;
+}
+/* 左边 */
+footer .footer-l{
+    margin-left: 85px;
+    width: 350px;
+    height: inherit;
+}
+footer .footer-l p,footer .footer-c p{
+    margin-top: 60px;
+}
+footer .footer-l hr ,footer .footer-c hr{
+    margin: 10px 0 20px 0;
+    width: 20px;
+}
+footer .footer-l small,footer .footer-c small{
+    margin-top: 15px;
+    display:block;
+}
+
+
+/* 中间 */
+footer .footer-c{
+    width: 300px;
+    height: inherit;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+/* 右边 */
+footer .footer-r{
+    width: 618px;
+    height: inherit;
+}
+footer .footer-r nav ul li{
+    float: left;
+    width: 129px;
+    margin: 60px 40px 0 70px;
+}
+footer .footer-r p{
+    text-align: center;
+    margin-top: 10px;
+}
+footer .footer-r img{
+    width: 129px;
+    height: 129px;
+}
