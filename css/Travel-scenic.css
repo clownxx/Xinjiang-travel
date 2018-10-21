@@ -1,0 +1,141 @@
+/*css为clearfix，清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+/*主要内容*/
+main{
+    height: 100%;
+    background-color: white;
+}
+.scenic{
+    height: 300px;
+    background-color: #F5F5F5;
+}
+/*选中当前导航标签*/
+.current{
+    background: #0899e6;
+}
+/*景区logo*/
+.scenic-logo{
+    text-align: center;
+    padding-top: 37px;
+    padding-bottom: 45px;
+}
+/*景区搜索*/
+.scenic-search{
+    height: 45px;
+    width: 1200px;
+    margin: 0 auto;
+}
+/*左边区域*/
+.search-left{
+    float: left;
+}
+.search-left select{
+    height: 43px;
+    width: 160px;
+    outline: none;
+    font-size: 16px;
+}
+/*右边区域*/
+.search-right{
+    float: right;
+}
+/*搜索框*/
+.search-right-ser{
+    float: left;
+    width: 160px;
+    height: 43px;
+    outline: none;
+    border: 1px solid #999;
+    text-indent: 10px;
+    border-right: 0;
+}
+/*提交按钮*/
+.search-right-sub{
+    float: left;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #999;
+    outline: none;
+    cursor: pointer;
+    background: url("../img/search.png") center no-repeat;
+}
+/*景区列表*/
+.scenic-list ul li{
+    width: 24.7%;
+    margin-right: 0.4%;
+    margin-bottom: 0.4%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.scenic-list .last{
+    margin-right: 0;
+}
+.scenic-list ul li img{
+    width: 100%;
+    height: 253px;
+    display: block;
+    transition: all .5s linear;
+}
+.details{
+    height: 67px;
+    width: 100%;
+    background: url("../img/jqu_zy_bg_03.png") left top no-repeat;
+    padding-top: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+.scenic-list ul li:hover .details{
+    display: block;
+}
+.scenic-list ul li img:hover{
+    transform: scale(1.2);
+}
+.details-title{
+    float: left;
+    line-height: 30px;
+    color: black;
+    margin-left: 25px;
+}
+.details-con{
+    float: right;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0 15px;
+    color: white;
+    background-color: #0899e6;
+    margin-right: 25px;
+}
+/*更多景区*/
+.more{
+     padding: 40px 0 80px 0;
+ }
+.more div{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #00a67c;
+}
+.more div a{
+    color: #00a67c;
+}
+.more div a:hover{
+    color: red;
+}
