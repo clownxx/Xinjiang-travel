@@ -1,0 +1,224 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    width: 100%;
+    height: 90px;
+    background: #005ac1;
+}
+.head .head_title{
+    width: 70%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.head .head_title .img1{
+    width: 500px;
+    height: 90px;
+    padding-top: 20px;
+}
+.head .head_title .img2{
+    width: 300px;
+    height: 90px;
+}
+.head .head_title .img1 img{
+    width: 300px;
+    height: 60px;
+}
+.head .head_title .img2 img{
+    width: 150px;
+    height: 50px;
+    padding-top: 25px;
+    padding-left: 150px;
+}
+main{
+    background: rgb(238, 238, 238);
+}
+main .content_box{
+    width: 70%;
+    height: 1000px;
+    margin: auto;
+    background: #fff;
+}
+main .center_box{
+    width: 100%;
+    display: flex;
+}
+main .top{
+    width: 100%;
+    height: 50px;
+    background: #ddefff;
+}
+main .top a{
+    text-decoration: none;
+    color: rgb(60, 118, 224);
+    position: relative;
+    top:15px;
+    left: 750px;
+}
+main .content_box .title{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+main .content_box .title h1{
+    font-size: 18px;
+    color: rgb(48, 47, 47);
+    font-weight: normal;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+main .content_box .title .button{
+    width: 200px;
+    height: 50px;
+    display: flex;
+}
+main .content_box .title .button .fast{
+    width: 80px;
+    height: 38px;
+    color: rgb(3, 103, 253);
+    border: 1px solid rgb(3, 103, 253);
+    border-radius: 10%;
+    text-align: center;
+    line-height: 38px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+main .content_box .title .button .fast:hover{
+    background: #818283;
+    transition: all 1s linear;
+    cursor: pointer;
+}
+main .content_box .title .button .query{
+    width: 80px;
+    height: 38px;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    line-height: 38px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+main .content_box .title .button .query:hover{
+    background: #818283;
+    transition: all 1s linear;
+    cursor: pointer;
+}
+main .content_box .left_box{
+    width: 70%;
+    margin-top: 20px;
+    border-right: 1px solid slategray;
+}
+main .content_box .left_box .left_content{
+    width: 99%;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+main .content_box .left_box .left_content1{
+    width: 99%;
+    height: 170px;
+    margin-bottom: 20px;
+}
+main .content_box .left_box .left_content1 textarea{
+    margin-left: 95px;
+    margin-top: -15px;
+}
+main .center_box .left_box .thing{
+    margin-left: 10px;
+}
+main .content_box .left_box .voucher{
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgb(41, 75, 228);
+    color: #005ac1;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 90px;
+}
+main .content_box .left_box .voucher a{
+    text-decoration: none;
+    color: rgb(41, 75, 228);
+}
+main .content_box .left_box .voucher_none{
+    width: 500px;
+    height: 70px;
+    position: absolute;
+    left: 320px;
+    display: none;
+}
+main .content_box .left_box .voucher_none input{
+    position: relative;
+    right: 110px;
+}
+main .content_box .left_box .voucher:hover{
+    background: #818283;
+    cursor: pointer;
+}
+main .content_box .left_box .voucher:hover .voucher_none{
+    display: block;
+}
+main .content_box .left_box .voucher_none .voucher_text{
+    font-size: 13px;
+    color: #005ac1;
+}
+main .content_box .left_box .agree{
+    margin-top: 100px;
+    margin-left: 300px;
+}
+main .content_box .left_box .agree label a{
+    text-decoration: none;
+    color: #005ac1;
+}
+main .content_box .left_box .agree label a:hover{
+    text-decoration: underline;
+}
+main .content_box .left_box .submit{
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding:0px 5px 0px 5px;
+    margin-left: 290px;
+    margin-top: 20px;
+    border: 1px solid blue;
+    background: #005ac1;
+    color: #fff;
+    border-radius: 5%;
+}
+main .content_box .left_box .submit:hover{
+    cursor: pointer;
+}
+main .content_box .right_box{
+    width: 30%;
+    margin-top: 20px;
+}
+main .content_box .right_box .top_text{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 80px;
+    font-size: 14px;
+}
+main .content_box .right_box .right_img{
+    width: 200px;
+    height: 200px;
+    padding: px 10px 10px 10px;
+    margin-left: 60px;
+}
+main .content_box .right_box .right_img img{
+    width: 180px;
+    height: 180px;
+}
+main .content_box .right_box .bottom_text{
+    width: 200px;
+    height: 200px;
+    font-size: 14px;
+    margin-left: 60px;
+}
